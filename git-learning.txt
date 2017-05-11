@@ -1,2 +1,18 @@
 I am learning git.
 I am lucky to learning git.
+
+
+//知识点
+git init            //创建版本库,可将此目录变成可git可管理的版本库
+pwd                 //显示当前文件在电脑中的目录
+git add             //将文件添加到版本库（暂存区），可反复多次使用，添加多个文件
+git commit          //把文件提交到仓库（当前分支）  
+git commit -m ''    //-m后引号内添加本次提交的说明，养成写说明的好习惯，这将有助于仓库的管理工作
+git status          //查看仓库中文件的状态，时刻把握工作区的状态
+git diff            //查看文件中具体修改的内容
+git log             //查看提交的历史记录
+git log --pretty=online         //将繁琐的历史记录精简成行，方便查看
+git reset --hard HEAD^          //版本回退，参数--hard后HEAD^指的最近一个版本（HEAD指针指向当前版本），两个^^指最近的第二个版本，再往前可直接用版本号代替
+git reflog          //查看所有的提交记录，包括已经被回退的版本，有助于版本回到未来的版本
+git reset --hard 版本号          //版本回到未来的某个版本，参数--hard后直接加版本号，版本号用git log可以查看（前几位即可）
+
